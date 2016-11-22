@@ -1,0 +1,133 @@
+.wrapper_core {
+    width: 920px;
+    padding: 40px 20px 20px;
+    margin: 0 auto;
+
+    background-color: rgba(194, 254, 247, 0.9);
+}
+
+table {
+    margin-bottom: 15px;
+}
+
+td {
+    width: 40px;
+/*    height: 40px;*/
+    border: 1px solid rgba(18, 154, 179, 0.95);
+
+    background-color: rgba(61, 206, 232, 0.95);
+    color: rgba(255, 255, 255, 1.0);
+
+    font-weight: bold;
+    text-align: center;
+
+    line-height: 40px;
+}
+
+/*td[colspan="2"] {*/
+td[colspan] {
+    background-color: rgba(154, 236, 251, 0.95);
+    color: rgba(0, 0, 220, 0.9);
+}
+
+td[rowspan] {
+    background-color: rgba(197, 251, 154, 0.95);
+    color: rgba(244, 161, 94, 0.91);
+}
+
+td[colspan="3"] {
+    background-color: rgba(159, 154, 251, 0.95);
+    color: rgba(0, 0, 220, 0.9);
+}
+
+td[rowspan="3"] {
+    background-color: rgba(55, 112, 10, 0.95);
+    color: rgba(244, 161, 94, 0.91);
+}
+
+
+
+.caption {
+    display: block;
+    padding: 5px 10px;
+    margin: 10px auto 5px;
+
+    background-color: rgba(235, 203, 238, 0.82);
+    color: rgba(30, 104, 215, 1);
+
+    text-align: center;
+}
+
+/* WHITE */
+.puzzle .fill-01 {
+    background-color: rgba(255, 255, 255, 1.0);
+    color: rgba(0, 255, 0, 1.0);
+}
+
+/* YELLOW */
+.puzzle .fill-02 {
+    background-color: rgba(246, 244, 22, 1);
+    color: rgba(0, 0, 255, 1.0);
+}
+
+/* RED */
+.puzzle .fill-03 {
+    background-color: rgba(255, 0, 0, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+}
+
+/* BLACK */
+.puzzle .fill-04 {
+    background-color: rgba(0, 0, 0, 1.0);
+    color: rgba(51, 248, 254, 1);
+}
+
+/* BLUE */
+.puzzle .fill-05 {
+    background-color: rgba(0, 0, 255, 1.0);
+    color: rgba(0, 255, 0, 1.0);
+}
+
+.puzzle td {
+    border-color: rgba(0, 0, 0, 1.0);
+/*    border-width: 4px;*/
+}
+
+.puzzle {
+    width: 503px;
+    height: 544px;
+}
+
+
+#cell-01 {
+    width: 116px;
+    width: 58px;
+
+    height: 48px;
+}
+
+#cell-02 {
+    width: 199px;
+    width: 63px;
+
+    height: 48px;
+}
+
+#cell-03 {
+    width: 160px;
+    width: 80px;
+
+    height: 48px;
+}
+
+#cell-04 {
+    width: 49px;
+    height: 127px;
+    height: 63px;
+}
+
+#cell-05 {
+    width: 270px;
+    width: 135px;
+    height: 115px;
+}

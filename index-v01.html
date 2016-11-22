@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- I think the core language of the Login page is Spanish -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The GoIT FE Homework 05</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper_core">
+        <header class="header">
+            <nav class="header_nav">
+                <ul class="header_menu">
+                    <li><a href="#">Meu YouBike</a></li>    <!-- my YouBike -->
+                    <li><a href="#">Vender</a></li>            <!-- to sell -->
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contato</a></li>            <!-- contact us -->
+                    <li><a href="#">Ajuda</a></li>                <!-- Help -->
+
+                    <!-- A Vertical Bar of Blue-like colour as a separator -->
+                    <!-- Vertical Line Extension U+23D0 (or &#9168;)
+                        taken from a web-resource, the unicode-table.com/en/23D0/
+                        BUT !! It didn't heleped me so much
+                        Another resource is www.amp-what.com !
+                    -->
+                    <li class="header_vert_bar"></li>
+                </ul>
+                <!-- !!! Check the shadow form over transparent image BG
+                    on the BG-image for UL, or 1st LI,
+                    and for the IMG element
+                -->
+                <ul class="my_offers">
+                    <li><a class="hdr-bg-flag" href="#"></a></li>
+                    <li><a href="#">Minhas Ofertas</a></li>
+                </ul>
+                <!-- The header's section 'Login||Create' -->
+                <div class="header_login">Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></div>
+
+            </nav>
+        </header>
+        <main class="wrapper_main">
+            <div class="useracnt_space">
+                <div class="useracnt_header">
+                    <span>Cadastre-se</span>
+                </div>
+                <div class="useracnt_main">
+                    <!-- A user Login via Facebook credentials -->
+                    <div class="control_aligner form-text_item fb_control">
+                            <span class="icon_fb">Icon</span><span>Log In</span> with <span>Facebook</span><span class="fb_rarrow"></span>
+                    </div>    <!-- eo Facebook Login entry -->
+                    <div class="control_aligner login_separator">
+
+                    </div>
+                    <!-- Youbike site's UserAccount creation space -->
+                    <form action="" class="control_aligner form-useracnt_create" name="form-create_useracnt">
+                        <fieldset class="fieldset_style">
+                            <input type="text" name="first_name" placeholder="First Name" class="control_aligner form-text_item">
+                            <input type="text" name="last_name" placeholder="Last Name" class="control_aligner form-text_item">
+                            <input type="email" name="user_email" placeholder="Email Address" class="control_aligner form-text_item">
+                            <input type="password" name="user_password" placeholder="Choose Password" class="control_aligner form-text_item">
+                            <input type="password" name="user_pwconfirm" placeholder="Confirm Password" class="control_aligner form-text_item">
+                            <div class="assign">
+                                <input type="checkbox" name="assign_tip_upd" value="assign_tip_upd" id="assign4tip">
+                                <label for="assign4tip">Send me Youbike updates and updates</label>
+                            </div>
+                            <input type="submit" value="Create my Account" class="control_aligner form-text_item">
+                            <div class="terms_approval">
+                                <p>By clicking the button above, you agree to the Terms of Service</p>
+                                <p>
+                                    <!-- I think the word VIEW should be used here in place of the word XIEW !!! -->
+                                    <a href="#">View our Privacy Policy</a>
+                                </p>.
+                            </div>info
+                        <div style="margin: 0 auto; background-color: yellow; width: 240px; height: 20px;">Here is DIV IN-side FIELDSET</div>
+                        </fieldset> <!-- eo the form's fieldset section -->
+                        <div style="margin: 0 auto; background-color: orange; width: 240px; height: 20px;">Here is DIV outside FIELDSET</div>
+                    </form>
+                </div>    <!-- eo 'useracnt_main' -->
+            </div> <!-- eo 'useracnt_space -->
+        </main>
+    </div>
+
+</body>
+</html>

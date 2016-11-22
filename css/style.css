@@ -1,0 +1,454 @@
+body {
+
+
+
+    font-family: 'Helvetica Neue Regular', sans-serif;
+
+    /* otherwise I see very condensed letters in Helvetica Neue ! */
+/*    letter-spacing: 0.07em;--*/
+    letter-spacing: 0.02em;
+}
+
+/* The Dims are 1215px x 1064px (Header : 36px, Centre(BG) : 1028px) */
+.wrapper_core {
+    width: 1215px;
+
+    margin: 0 auto;
+}
+
+.header {
+    height: 36px;
+
+    background-color: rgba(7, 79, 143, 1.0);
+
+    /* A pattern edition in PS,‘Paint Bucket’ tool
+        graphicdesign.stackexchange.com/questions/3341/how-to-edit-the-photoshop-patterns
+     */
+
+    /* the Header's pattern goes here ... */
+/*    background-image: url("../img/bg-header-pattern-4x4.png");*/
+    /* the Header's pattern Noise goes here ... */
+}
+
+/* Dims :
+
+*/
+.header_nav {
+
+    /* 468x11 => 455px = 468/length between leftEdge and the 1st Letter on horizontalMenu
+        I have to leave a Left-padding of 13px !
+        So, LeftPadding 465 = 486 - 13
+    */
+    padding-left: 455px;
+}
+
+.header_menu {
+    height: 36px;
+    float: left;
+}
+
+
+.header_menu li {
+    float: left;
+    list-style: none;
+}
+
+.header_menu li a {
+    display: block;
+    height: 36px;
+
+    padding-left: 13px;
+
+    line-height: 36px;
+
+    color: rgba(96, 181, 237, 1.0);
+
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+
+    /* otherwise I see very condensed letters in Helvetica Neue ! */
+/*    letter-spacing: 0.07em; */
+
+    text-decoration: none;
+}
+
+
+
+.header_menu li:first-child a {
+    padding-right: 13px;
+}
+
+.header_menu li:nth-child(2) a {
+    padding-right: 10px;
+}
+
+.header_menu li:nth-child(3) a {
+    padding-right: 14px;
+}
+
+.header_menu li:nth-child(4) a {
+    padding-right: 16px;
+}
+
+.header_menu li:nth-child(5) a {
+    padding-right: 22px;
+}
+
+.header_menu li a:hover {
+    background-color: rgba(78, 171, 218, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+}
+
+/* A Vertical Bar of Blue-like colour as a separator */
+.header_vert_bar {
+    height: 32px;
+    border-left: 1px solid rgba(96, 181, 237, 1.0);
+    margin: 2px 0;
+}
+
+
+/* The "Minhas Ofertas" menu */
+
+/* It is float-ed since it should lay as a horizontal menu(i) near the previous menu(i-1) */
+.my_offers {
+/*    height: 36px;*/
+    float: left;
+}
+
+/* The UL's LI is float-ed since its items should lay horizontally too ! */
+.my_offers li {
+    float: left;
+    list-style: none;
+
+    height: 36px;
+}
+
+a.hdr-bg-flag {
+    display: block;
+
+    height: 36px;
+    width: 25px;
+
+    width: 51px;
+
+    background-image: url("../img/my-flag-01-vec.svg");
+    background-size: 21px 23px;
+    background-position: 21px 8px;
+
+
+    background-repeat: no-repeat;
+
+    line-height: 36px;
+}
+
+.my_offers li a {
+    display: block;
+    height: 36px;
+
+    padding-left: 13px;
+    padding-left: 0;
+
+    line-height: 36px;
+
+    color: rgba(255, 255, 255, 1.0);
+
+/*    vertical-align: middle;*/
+    font-size: 14px;
+    font-weight: bold;
+
+    /* otherwise I see very condensed letters in Helvetica Neue ! */
+/*    letter-spacing: 0.07em; */
+
+    text-decoration: none;
+}
+
+.my_offers li:nth-child(2) a {
+    padding-right: 17px;
+}
+
+.header_login {
+    height: 34px;
+    float: left;
+    padding-left: 14px;
+    padding-right: 12px;
+
+    line-height: 36px;
+
+/*    border: 1px solid transparent;*/
+/*    border: 1px solid lime;*/
+    border: 1px solid;
+    border-image: linear-gradient(rgba(100, 168, 227, 1.0), rgba(68, 154, 211, 1.0)) 10;
+    background-image: linear-gradient(rgba(80, 175, 220, 1.0), rgba(46, 122, 196, 1.0));
+
+    color: rgba(255, 255, 155, 1.0);    /* Nice soft colour */
+    color: rgba(255, 255, 255, 1.0);
+
+/*    vertical-align: middle;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header_login a {
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.wrapper_main {
+    height: 1028px;
+
+    position: relative;
+
+    background-image: url("../img/core-bg.jpeg");
+}
+
+/*  Flex-positioning model is more progressive.
+    But, at the moment, I apply the mix of Abs/Rel-positioning schemes
+*/
+.useracnt_space {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 560px;
+    height: 613px;
+
+    margin-top: -307px;
+    margin-left: -260px;
+
+}
+
+.useracnt_space .useracnt_header {
+    text-align: center;
+    line-height: 64px;
+}
+
+.useracnt_space .useracnt_header span {
+/*    line-height: 64px;*/
+}
+
+/*.useracnt_space .useracnt_header {
+    margin: 0 auto;
+}*/
+
+.useracnt_header {
+    height: 64px;
+    /* Here is the transparent gap between the header and main section of the User Acoount Creation GUI */
+    margin-bottom: 2px;
+
+    background-color: rgba(0, 0, 0, 0.40);
+
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 24px;
+}
+
+.useracnt_main {
+/*    height: 547px;*/
+
+    padding-top: 40px;
+
+
+    background-color: rgba(0, 0, 0, 0.50);
+
+    color: rgba(255, 255, 255, 1.0);
+}
+
+/* Facebook Login button ...
+    Full DIMs : 276 x 35
+    Width: 274
+    Height: 33
+    Border-top: 1px
+*/
+.fb_control {
+    display: block;
+    width: 276px;
+    height: 35px;
+
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+/*    margin-top: 10px;*/
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+/*    border-image: linear-gradient(rgba(100, 168, 227, 1.0), rgba(68, 154, 211, 1.0)) 10;
+    border-image: linear-gradient(rgba(255, 255, 227, 1.0), rgba(68, 154, 211, 1.0)) 10;    */
+
+/*    border-image: linear-gradient(rgba(255, 255, 255, 1.0), rgba(19, 10, 19, 1.0));*/
+
+    background-image: linear-gradient(rgba(72,107,181,1), rgba(51,78,135,1));
+
+    color: rgba(255, 255, 255, 1.0);
+
+    text-decoration: none;
+    line-height: 35px;
+
+    font-size: 14px;
+}
+
+.fb_control span.fb_high {
+    font-weight: bold;
+}
+
+.fb_control .icon_fb {
+/*    display: inline-block;*/
+    float: left;
+    width: 34px;
+    height: 29px;
+    height: 35px;
+
+    border-right: 1px solid rgba(29, 60, 117, 1.0);
+
+    background-image: url("../img/fb_login_sprite-12x22.png");
+    background-image: url("../img/ori-fb-vec-03-white.svg");
+
+    background-size: 12px 22px;
+    background-position: center;
+    background-position: 8px 6px;
+    background-repeat: no-repeat;
+
+    line-height: 29px;
+}
+
+.fb_rarrow {
+    margin-left: 23px;
+}
+
+.icon_fb + span {
+    float: left;
+    padding-left: 32px;
+
+    border-left: 1px solid rgba(77, 104, 171, 1.0);
+}
+
+.login_separator {
+    width: 276px;
+    height: 12px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.login_separator * {
+    vertical-align: middle;
+}
+
+.login_separator .login_horsep {
+    display: inline-block;
+    width: 124px;
+    width: 114px;
+
+    border-top: 1px solid rgba(102, 102, 102, 1.0);
+    border-bottom: 1px solid rgba(0, 0, 0, 1.0);
+
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.login_separator .login_horsymb {
+    display: inline-block;
+    height: 14px;
+    padding-left: 6px;
+    padding-right: 7px;
+
+    color: rgba(153, 153, 153, 1.0);
+}
+
+.form-text_item {
+    display: block;
+    width: 276px;
+    height: 35px;
+    border-width: 0;
+
+    margin: 0 auto;
+/*    margin-top: 20px;*/
+
+
+    background-color: rgba(15, 15, 15, 1.0);
+    color: rgba(204, 204, 204, 1.0);
+
+    box-shadow: 0px 1px 1px 0px rgba(73, 73, 71, 1.0);
+    box-shadow: 0px 1px 1px 0px rgba(72, 72, 71, 1.0);
+
+    text-indent: 19px;
+    font-size: 14px;
+}
+
+.form-text_item:focus {
+    background-color: rgba(27, 82, 136, 1.0);
+    color: rgba(255, 255, 255, 1.0);
+
+    box-shadow: 0px 0px 14px 3px rgba(113, 184, 232, 1.0);
+}
+
+#first_name {
+    margin-bottom: 20px;
+}
+
+#last_name, #user_email {
+    margin-bottom: 17px;
+}
+
+#user_password {
+    margin-bottom: 14px;
+}
+
+#user_pwconfirm {
+    margin-bottom: 22px;
+}
+
+.assign {
+    width: 276px;
+/*    height: 35px;*/
+
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    font-size: 14px;
+}
+
+.assign * {
+/*    line-height: 14px;*/
+    vertical-align: middle;
+}
+
+.useracnt_main input[type=submit] {
+    display: block;
+    width: 147px;
+    height: 33px;
+
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 21px;
+
+    border-width: 1px;
+    border-radius: 2px;
+    border-image-source: linear-gradient(rgba(103, 198, 230, 1.0), rgba(53, 133, 201, 1.0));
+
+    background-image: linear-gradient(rgba(80, 174, 219, 1.0), rgba(60, 143, 206, 1.0), rgba(46, 122, 196, 1.0));
+
+    color: rgba(255, 255, 255, 1.0);
+
+    font-size: 14px;
+}
+
+.terms_approval {
+    width: 309px;
+    height: 28px;
+
+    margin: 0 auto;
+    margin-bottom: 21px;
+
+    text-align: center;
+
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.terms_approval a {
+    color: inherit;
+
+    text-decoration: none;
+}

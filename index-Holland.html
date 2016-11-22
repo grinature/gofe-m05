@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The GoIT FE Hometask 05, part 2 - Fileds of Holland</title>
+    <link rel="stylesheet" href="css/reset-em.css">
+    <link rel="stylesheet" href="css/Holland.css">
+</head>
+<body>
+    <div class="wrapper_core">
+
+        <!-- My Hometask Puzzle  -->
+        <div class="caption">My Hometask Puzzle (dimensions: 7 x 9 "picture" cells)</div>
+
+        <!-- 7 x  to be almost the same as the picture-->
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01">{1,2},1</td>
+                <td colspan="3" class="fill-01">{3,5},1</td>
+                <td colspan="2" class="fill-02">{6,7},1</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01">1,{2,3}</td>
+                <td colspan="4" class="fill-03">{2..5},2</td>
+                <td colspan="2" class="fill-02">{6,7},2</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},3</td>
+                <td colspan="2" class="fill-02">{6,7},3</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01">1,{4..6}</td>
+                <td colspan="4" class="fill-03">{2..5},4</td>
+                <td rowspan="2" class="fill-01">6,{4,5}</td>
+                <td rowspan="2" class="fill-01">7,{4,5}</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},5</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04">2,{6,7}</td>
+                <td rowspan="2" class="fill-04">3,{6,7}</td>
+                <td colspan="2" class="fill-01">{4,5},6</td>
+                <td colspan="2" class="fill-01">{6,7},6</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02">1,{7..9}</td>
+                <td colspan="2" class="fill-01">{4,5},7</td>
+                <td colspan="2" class="fill-05">{6,7},7</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},8</td>
+                <td colspan="2" class="fill-04">{4,5},8</td>
+                <td colspan="2" class="fill-05">{6,7},8</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},9</td>
+                <td colspan="4" class="fill-01">{4..7},9</td>
+            </tr>
+        </table>
+
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01" id="cell-01"></td>
+                <td colspan="3" class="fill-01" id="cell-02"></td>
+                <td colspan="2" class="fill-02" id="cell-03"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01" id="cell-04"></td>
+                <td colspan="4" class="fill-03" id="cell-05"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01"></td>
+                <td colspan="4" class="fill-03"></td>
+                <td rowspan="2" class="fill-01"></td>
+                <td rowspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04"></td>
+                <td rowspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="4" class="fill-01"></td>
+            </tr>
+        </table>
+
+
+
+
+        <!-- the compact variant !
+            Proportions with relation to the picture withowt setting CSS-dimensions differ
+        -->
+<!--
+        <table>
+            <tr>
+                <td colspan="2" class="fill-01">{1,2},1</td>
+                <td colspan="2" class="fill-01">{3,4},1</td>
+                <td colspan="2" class="fill-02">{5,6},1</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01">1,{2,3}</td>
+                <td >2,{2..4}</td>
+            </tr>
+        </table>
+-->
+
+        <!-- Sample 01: Table 1 x 1 -->
+        <div class="caption">1 x 1</div>
+        <table>
+            <tr>
+                <td>1 x 1</td>
+            </tr>
+        </table>
+
+        <!-- Sample 02: Table 2 x 1 -->
+        <div class="caption">2 x 1</div>
+        <table>
+            <tr>
+                <td>1,1</td>
+                <td>2,1</td>
+            </tr>
+        </table>
+
+        <!-- Sample 03: Table 1 x 3 -->
+        <div class="caption">1 x 3</div>
+        <table>
+            <tr>
+                <td>1,1</td>
+            </tr>
+            <tr>
+                <td>1,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+            </tr>
+        </table>
+
+        <!-- Sample 04: Table 2 x 2 -->
+        <div class="caption">2 x 2</div>
+        <table>
+            <tr>
+                <td>1,1</td>
+                <td>2,1</td>
+            </tr>
+            <tr>
+                <td>1,2</td>
+                <td>2,2</td>
+            </tr>
+        </table>
+
+        <!-- Sample 05: 3 x 3 MIX -->
+        <div class="caption">2 rows of 2 cells (columns)</div>
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td colspan="1">1,2</td>
+                <td>2,2</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>2,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td colspan="2">{1,2},2</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>2,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td>2,1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td colspan="2">2,{2,3}</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>2,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td rowspan="2">2,{1,2}</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>2,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td>2,1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,{2,3}</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td>2,1</td>
+                <td rowspan="2">3,{1,2}</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,{2,3}</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td rowspan="2">2,{1,2}</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+            </tr>
+<!--            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>-->
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td colspan="2">{1,2},2</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>2,3</td>
+                <td>3,3</td>
+            </tr>
+            <tr>
+                <td colspan="3">{1..3},4</td>
+            </tr>
+        </table>
+
+        <!-- Sample 08: 3 x 3 MIX -->
+        <div class="caption">2 x 3</div>
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td>2,2</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+            </tr>
+        </table>
+
+        <!-- Sample 09: 3 x 2 MIX -->
+        <div class="caption">3 x 2, MIX</div>
+        <table>
+            <tr>
+                <td rowspan="2">1,{1,2}</td>
+                <td>2,1</td>
+                <td rowspan="2">3,{1,2}</td>
+            </tr>
+            <tr>
+                <td>2,2</td>
+            </tr>
+        </table>
+
+        <!-- Sample 10: 3 x 3 MIX -->
+        <div class="caption">3 x 3, MIX</div>
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td colspan="2">{1,2},2</td>
+                <td rowspan="2">3,{2,3}</td>
+            </tr>
+            <tr>
+                <td colspan="2">{1,2},3</td>
+            </tr>
+            <tr>
+                <td>1,4</td>
+                <td>2,4</td>
+                <td>3,4</td>
+            </tr>
+        </table>
+
+        <!-- Sample 11: 3 x 3 MIX -->
+        <div class="caption">3 x 3, MIX</div>
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td rowspan="2">3,{1,2}</td>
+            </tr>
+            <tr>
+                <td>1,2</td>
+                <td rowspan="2">2,{2,3}</td>
+            </tr>
+            <tr>
+                <td>1,3</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+
+        <!-- Sample 12: 4 x 4 MIX -->
+        <div class="caption">4 x 4, MIX</div>
+        <table>
+            <tr>
+                <td colspan="3">1,{1..3}</td>
+                <td rowspan="2">4,{1,2}</td>
+            </tr>
+            <tr>
+                <td colspan="2">{1,2},2</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1,{3,4}</td>
+                <td colspan="3">{2..4},3</td>
+            </tr>
+            <tr>
+                <td>2,4</td>
+                <td colspan="2">3,{4,5}</td>
+            </tr>
+        </table>
+
+        <!-- Sample 13: 5 x 4 MIX -->
+        <div class="caption">5 x 4, MIX</div>
+        <table>
+            <tr>
+                <td>1,1</td>
+                <td colspan="3">{2..4,1}</td>
+                <td>5,1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1,{2,3}</td>
+                <td colspan="3">2,{2..4}</td>
+                <td rowspan="2">5,{2,3}</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,{3,4}</td>
+                <td colspan="2">3,{3,4}</td>
+            </tr>
+            <tr>
+                <td>1,4</td>
+                <td colspan="2">{3,4},4</td>
+                <td>5,4</td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</body>
