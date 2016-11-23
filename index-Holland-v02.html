@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The GoIT FE Hometask 05, part 2 - Fileds of Holland</title>
+    <link rel="stylesheet" href="css/reset-em.css">
+    <link rel="stylesheet" href="css/Holland.css">
+</head>
+<body>
+    <div class="wrapper_core">
+
+        <!-- My Hometask Puzzle  -->
+        <div class="caption">My Hometask Puzzle (dimensions: 7 x 9 "picture" cells)</div>
+
+        <!-- 7 x  to be almost the same as the picture-->
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01">{1,2},1</td>
+                <td colspan="3" class="fill-01">{3,5},1</td>
+                <td colspan="2" class="fill-02">{6,7},1</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01">1,{2,3}</td>
+                <td colspan="4" class="fill-03">{2..5},2</td>
+                <td colspan="2" class="fill-02">{6,7},2</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},3</td>
+                <td colspan="2" class="fill-02">{6,7},3</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01">1,{4..6}</td>
+                <td colspan="4" class="fill-03">{2..5},4</td>
+                <td rowspan="2" class="fill-01">6,{4,5}</td>
+                <td rowspan="2" class="fill-01">7,{4,5}</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},5</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04">2,{6,7}</td>
+                <td rowspan="2" class="fill-04">3,{6,7}</td>
+                <td colspan="2" class="fill-01">{4,5},6</td>
+                <td colspan="2" class="fill-01">{6,7},6</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02">1,{7..9}</td>
+                <td colspan="2" class="fill-01">{4,5},7</td>
+                <td colspan="2" class="fill-05">{6,7},7</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},8</td>
+                <td colspan="2" class="fill-04">{4,5},8</td>
+                <td colspan="2" class="fill-05">{6,7},8</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},9</td>
+                <td colspan="4" class="fill-01">{4..7},9</td>
+            </tr>
+
+            <!-- Without the following TableRow content,
+               a rendering of the table happen but the HTML-validation fail !!!
+               I would call it as the Logical (accoding to Table creation algorythm) Table-cell collapsing (melting, dissaperaing, etc ...) !
+           -->
+
+            <tr>
+                <td>1, 9</td>
+                <td>2, 9</td>
+                <td>3, 9</td>
+                <td>4, 9</td>
+                <td>5, 9</td>
+                <td>6, 9</td>
+                <td>7, 9</td>
+            </tr>
+
+        </table>
+
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01" id="cell-01"></td>
+                <td colspan="3" class="fill-01" id="cell-02"></td>
+                <td colspan="2" class="fill-02" id="cell-03"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01" id="cell-04"></td>
+                <td colspan="4" class="fill-03" id="cell-05"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01"></td>
+                <td colspan="4" class="fill-03"></td>
+                <td rowspan="2" class="fill-01"></td>
+                <td rowspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04"></td>
+                <td rowspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},9</td>
+                <td colspan="4" class="fill-01">{4..7},9</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="2">{1,2},1</td>
+                <td colspan="2">{3,4},1</td>
+                <td rowspan="2">5,{1,2}</td>
+            </tr>
+            <tr>
+                <td>2,2</td>
+                <td colspan="3">{2,4}2</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <td>3,3</td>
+                <td>3,4</td>
+                <td>3,5</td>
+            </tr>
+        </table>
+
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01">{1,2},1</td>
+                <td colspan="3" class="fill-01">{3,5},1</td>
+                <td colspan="2" class="fill-02">{6,7},1</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01">1,{2,3}</td>
+                <td colspan="4" class="fill-03">{2..5},2</td>
+                <td colspan="2" class="fill-02">{6,7},2</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},3</td>
+                <td colspan="2" class="fill-02">{6,7},3</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01">1,{4..6}</td>
+                <td colspan="4" class="fill-03">{2..5},4</td>
+                <td rowspan="2" class="fill-01">6,{4,5}</td>
+                <td rowspan="2" class="fill-01">7,{4,5}</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03">{2..5},5</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04">2,{6,7}</td>
+                <td rowspan="2" class="fill-04">3,{6,7}</td>
+                <td colspan="2" class="fill-01">{4,5},6</td>
+                <td colspan="2" class="fill-01">{6,7},6</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02">1,{7..9}</td>
+                <td colspan="2" class="fill-01">{4,5},7</td>
+                <td colspan="2" class="fill-05">{6,7},7</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01">{2,3},8</td>
+                <td colspan="2" class="fill-04">{4,5},8</td>
+                <td colspan="2" class="fill-05">{6,7},8</td>
+            </tr>
+            <!-- the following TableRow content consists of 6 of 7 cells
+                which present usual table cells not spans-celss !
+           -->
+            <tr>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+            </tr>
+        </table>
+
+        <table class="puzzle">
+            <tr>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="3" class="fill-01"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-01"></td>
+                <td colspan="4" class="fill-03"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+                <td colspan="2" class="fill-02"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-01"></td>
+                <td colspan="4" class="fill-03"></td>
+                <td rowspan="2" class="fill-01"></td>
+                <td rowspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="fill-03"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="fill-04"></td>
+                <td rowspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-01"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="fill-02"></td>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fill-01"></td>
+                <td colspan="2" class="fill-04"></td>
+                <td colspan="2" class="fill-05"></td>
+            </tr>
+            <!-- the following TableRow content consists of 6 of 7 cells
+                which present usual table cells not spans-celss !
+           -->
+            <tr>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+                <td class="fill-01"></td>
+            </tr>
+        </table>
+    </div>
+</body>
