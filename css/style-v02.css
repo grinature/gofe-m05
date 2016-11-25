@@ -1,7 +1,9 @@
 body {
 /*    min-width: 1215px;*/
 
-    background-image: url("../img/core-bg.jpeg");
+    background-image: url("../img/core-bg.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     font-family: 'Helvetica Neue Regular', sans-serif;
 
